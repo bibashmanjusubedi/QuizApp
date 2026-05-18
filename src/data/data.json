@@ -1,0 +1,20 @@
+{
+  "quizzes": [
+    {
+      "title": "ReactJS",
+      "icon": "⚛️",
+      "questions": [
+        {
+          "question": "Which hook is used to handle side effects in React?",
+          "options": ["useState", "useSideEffect", "useEffect", "useMemo"],
+          "answer": "useEffect"
+        },
+        {
+          "question": "What is the correct syntax for a functional component?",
+          "options": ["function MyComp() {}", "class MyComp {}", "const MyComp = new Component()", "render() => {}"],
+          "answer": "function MyComp() {}"
+        }
+      ]
+    }
+  ]
+}
