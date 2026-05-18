@@ -13,12 +13,16 @@ export default function App() {
   const [showResults, setShowResults] = useState(false);
 
   // Handle Dark Mode CSS Class
+  // useEffect(() => {
+  //   if (theme === 'dark') {
+  //     document.body.style.backgroundColor = 'red';
+  //     // document.documentElement.classList.add('dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //   }
+  // }, [theme]);
   useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme]);
 
   const startQuiz = (quiz) => {
@@ -49,7 +53,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-dark-navy text-slate-800 dark:text-white transition-colors duration-300 p-6 md:p-12">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-white transition-colors duration-300 p-6 md:p-12">
       <div className="max-w-4xl mx-auto">
         {/* Header stays at the top of every screen */}
         <Header theme={theme} setTheme={setTheme} activeQuiz={activeQuiz} />
