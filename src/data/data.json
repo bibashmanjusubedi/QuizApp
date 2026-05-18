@@ -15,6 +15,48 @@
           "answer": "function MyComp() {}"
         }
       ]
+    },
+    {
+      "title": "JavaScript",
+      "icon": "🚀",
+      "questions": [
+        {
+          "question": "Which operator is used to assign a value to a variable?",
+          "options": ["*", "-", "=", "x"],
+          "answer": "="
+        },
+        {
+          "question": "How do you write 'Hello World' in an alert box?",
+          "options": [
+            "msg('Hello World');",
+            "alertBox('Hello World');",
+            "alert('Hello World');",
+            "msgBox('Hello World');"
+          ],
+          "answer": "alert('Hello World');"
+        }
+      ]
+    },
+    {
+      "title": "HTML",
+      "icon": "🌐",
+      "questions": [
+        {
+          "question": "What does HTML stand for?",
+          "options": [
+            "Hyper Text Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Manipulation Language",
+            "Operational HTML"
+          ],
+          "answer": "Hyper Text Markup Language"
+        },
+        {
+          "question": "Choose the correct HTML element for the largest heading:",
+          "options": ["<heading>", "<h6>", "<head>", "<h1>"],
+          "answer": "<h1>"
+        }
+      ]
     }
   ]
 }
