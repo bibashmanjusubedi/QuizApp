@@ -8,6 +8,7 @@ export default {
     theme: {
         extend:{
             colors:{
+                // "dark-navy": "#313E51",
                 purple:{
                     600:'#A729F5',
                     500:'#C67EFB',
