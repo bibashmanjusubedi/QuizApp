@@ -1,5 +1,12 @@
 # React + Vite
 
+## Instructions for My Quiz App
+* Download zip or clone the project
+* Install NodeJS
+* Install Dependencies with npm install
+* Run the project with npm run dev
+* [ProjectURL](https://roadmap.sh/projects/quiz-app)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
