@@ -6,7 +6,10 @@ import Results from './components/Results';
 import quizData from './data/data.json'; // We will create this file next!
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(
+		localStorage.getItem("theme") ? localStorage.getItem("theme") : "dark"
+  );
+
   const [activeQuiz, setActiveQuiz] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -21,9 +24,20 @@ export default function App() {
   //     document.documentElement.classList.remove('dark');
   //   }
   // }, [theme]);
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", theme === "dark");
-  }, [theme]);
+
+//   useEffect(() => {
+//     document.documentElement.classList.toggle("dark", theme === "dark");
+//   }, [theme]);
+
+
+	useEffect(() => {
+		if (theme === "dark") {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+		localStorage.setItem("theme", theme);
+	}, [theme]);
 
   const startQuiz = (quiz) => {
     setActiveQuiz(quiz);
